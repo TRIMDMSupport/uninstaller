@@ -2,7 +2,7 @@
 
 # Uninstallation using MacUninstaller with Dialog showing end of process
 
-item="drawio" # enter the software to uninstall
+item="androidfiletransfer" # enter the software to uninstall
 # Examples: adobecreativeclouddesktop, canva, cyberduck, handbrake, inkscape, textmate, vlc
 
 # PATH declaration
