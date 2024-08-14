@@ -17,14 +17,13 @@ NOTIFY=success
 #   - all          all notifications (great for Self Service installation)
 
 # notification type
-NOTIFICATIONTYPE=jamf
+NOTIFICATIONTYPE=swiftdialog
 # options:
 #   - jamf				show notifications using the jamf Management Action binary
 #   - swiftdialog       show notifications using swiftdialog
 #   - applescript       show notifications using applescript
 
 # Notification Sources
-jamfManagementAction="/Library/Application Support/JAMF/bin/Management Action.app/Contents/MacOS/Management Action"
 swiftDialog="/usr/local/bin/dialog"
 
 
