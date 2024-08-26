@@ -2,7 +2,7 @@
 
 # Uninstallation using MacUninstaller with Dialog showing end of process
 
-item="alttab" # enter the software to uninstall
+item="bruno" # enter the software to uninstall
 # Examples: adobecreativeclouddesktop, canva, cyberduck, handbrake, inkscape, textmate, vlc
 
 # PATH declaration
@@ -13,6 +13,8 @@ Installed_file="/usr/local/Installomator/installed/${item}"
 if [ -e "$Installed_file" ]; then 
     rm "$Installed_file"
 fi
+
+pkgutil --forget com.github.payload_free.${item}
 
 
 getCustomMacUninstaller () {
