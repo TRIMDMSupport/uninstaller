@@ -1,0 +1,16 @@
+wireshark)
+      appTitle="Wireshark"
+      appProcesses+=("Wireshark")
+      appFiles+=("/Applications/Wireshark.app")
+      appFiles+=("<<Users>>/Library/Application Support/Wireshark")
+      appFiles+=("<<Users>>/Library/Caches/org.wireshark.Wireshark")
+      appFiles+=("<<Users>>/Library/HTTPStorages/org.wireshark.Wireshark")
+      appFiles+=("<<Users>>/Library/Preferences/org.wireshark.Wireshark.plist")
+      appFiles+=("<<Users>>/Library/WebKit/org.wireshark.Wireshark")
+      appFiles+=("/Library/Application Support/Wireshark")
+      appFiles+=("/etc/paths.d/Wireshark")
+      appFiles+=("/etc/manpaths.d/Wireshark")
+      appLaunchAgents+=("/Library/LaunchDaemons/org.wireshark.ChmodBPF.plist")
+      preflightCommand+=("/usr/sbin/installer -pkg /Applications/Wireshark.app/Contents/Resources/Extras/Remove\ Wireshark\ from\ the\ system\ path.pkg -target /")
+      preflightCommand+=("/usr/sbin/installer -pkg /Applications/Wireshark.app/Contents/Resources/Extras/Uninstall\ ChmodBPF.pkg -target /")
+      ;;

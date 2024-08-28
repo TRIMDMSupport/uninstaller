@@ -1,0 +1,12 @@
+xquartz)
+      appTitle="XQuartz"
+      appProcesses+=("XQuartz")
+      appFiles+=("/Applications/Utilities/XQuartz.app")
+      appFiles+=("<<Users>>/Library/HTTPStorages/org.xquartz.X11")
+      appFiles+=("<<Users>>/Library/Preferences/org.xquartz.X11.plist")
+      appFiles+=("/opt/X11")
+      appFiles+=("/etc/manpaths.d/40-XQuartz")
+      appFiles+=("/etc/paths.d/40-XQuartz")
+      appLaunchAgents+=("/Library/LaunchDaemons/org.xquartz.privileged_startx.plist")
+      appLaunchAgents+=("/Library/LaunchAgents/org.xquartz.startx.plist")
+      ;;
