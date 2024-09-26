@@ -12,6 +12,9 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 Installed_file="/usr/local/Installomator/installed/${item}"
 if [ -e "$Installed_file" ]; then 
     rm "$Installed_file"
+else
+    echo "uninstaller ran minimum 1 time, so exit."
+    exit
 fi
 
 pkgutil --forget com.github.payload_free.${item}

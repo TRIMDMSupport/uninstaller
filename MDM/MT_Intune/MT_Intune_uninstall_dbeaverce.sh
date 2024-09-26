@@ -4,7 +4,7 @@
 
 item="dbeaverce" # enter the software to uninstall
 # Examples: adobecreativeclouddesktop, canva, cyberduck, handbrake, inkscape, textmate, vlc
-
+NOTIFY="all"
 # PATH declaration
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 
@@ -12,6 +12,9 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin
 Installed_file="/usr/local/Installomator/installed/${item}"
 if [ -e "$Installed_file" ]; then 
     rm "$Installed_file"
+else
+    echo "uninstaller ran minimum 1 time, so exit."
+    exit
 fi
 
 pkgutil --forget com.github.payload_free.${item}
@@ -60,6 +63,6 @@ caffexit () {
 }
 
 # Uninstall software using MacUninstaller
-cmdOutput="$(${destFile} ${item} || true)"
+cmdOutput="$(${destFile} ${item} ${NOTIFY=}|| true)"
 
 caffexit $exitStatus

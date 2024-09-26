@@ -12,6 +12,11 @@ else
   label=""
 fi
 
+if [ "$2" != "" ]; then
+  NOTIFY=$2
+else
+  NOTIFY="success"
+fi
 # lowercase the label
 label=${label:l}
 
