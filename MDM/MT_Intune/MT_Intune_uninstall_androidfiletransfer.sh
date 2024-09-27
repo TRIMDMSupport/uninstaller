@@ -18,7 +18,7 @@ else
 fi
 
 
-pkgutil --forget com.github.payload_free.${item}
+#pkgutil --forget com.github.payload_free.${item}
 
 
 getCustomMacUninstaller () {

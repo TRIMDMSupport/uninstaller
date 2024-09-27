@@ -14,7 +14,7 @@ for FILE in "$DIRECTORY"/*; do
     third_block=$(echo "$FILENAME" | awk -F '[_|.]' '{print $4}')
     pkgname="$third_block"
     pkgid="com.github.payload_free.${third_block}.uninstall"
-    pkgvers="1.0"
+    pkgvers="1.2"
 
     "$SCRIPT_TO_CALL" "$pkgname" "$pkgid" "$pkgvers" "$DIRECTORY"
   fi
