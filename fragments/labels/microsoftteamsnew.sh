@@ -1,5 +1,6 @@
 microsoftteamsnew)
       appTitle="Microsoft Teams"
+      appProcesses+=("Microsoft Teams")
       appFiles+=("/Applications/Microsoft Teams classic.app")
       appFiles+=("/Applications/Microsoft Teams.app")
       appFiles+=("<<Users>>/Library/Application Scripts/com.microsoft.teams2")
@@ -17,5 +18,5 @@ microsoftteamsnew)
       appFiles+=("<<Users>>/Library/Saved Application State/com.microsoft.teams2.savedState")
       appFiles+=("/var/db/receipts/com.microsoft.teams2.born")
       appLaunchDaemons+=("/Library/LaunchDaemons/com.microsoft.teams2.TeamsUpdaterDaemon.plist")
-      preflightCommand+=("killall 'Teams'")
+      preflightCommand+=("killall 'Microsoft Teams'")
       ;;
